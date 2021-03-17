@@ -16,7 +16,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44358</IISExpressSSLPort>
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -84,7 +84,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\powerbi.js.map" />
     <Content Include="web.config" />
-    <None Include="Properties\PublishProfiles\SalesforceUserOwnsDataApp - Web Deploy.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
