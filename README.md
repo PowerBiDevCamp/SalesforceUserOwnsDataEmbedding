@@ -72,12 +72,15 @@ of the document and focus on the text you want. If you need to stop
 reading before you reach the end, Word remembers where you left off -
 even on another device.
 
+<kbd>
 <img src="ReadMe\media\image2.png" style="width:4.1216in;height:2.22857in" />
+</kbd>
 
 Here is some text
 
+<kbd>
 <img src="ReadMe\media\image3.png" style="width:3.92857in;height:1.73554in" />
-
+</kbd>
 Here is more text
 
 <img src="ReadMe\media\image4.png" style="width:5.20056in;height:1.48571in" />
