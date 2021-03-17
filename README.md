@@ -74,11 +74,11 @@ even on another device.
 
 Here is some text
 
-<img src="ReadMe\media\image3.png" style="width:3.85632in;height:1.74714in" />
+<img src="ReadMe\media\image3.png" style="width:1.86526in;height:0.84507in" />
 
 Here is more text
 
-<img src="ReadMe\media\image4.png" style="width:4.43103in;height:1.29396in" />
+<img src="ReadMe\media\image4.png" style="width:2.18779in;height:0.63889in" />
 
 <img src="ReadMe\media\image5.png" style="width:5.10962in;height:1.94286in" />
 
