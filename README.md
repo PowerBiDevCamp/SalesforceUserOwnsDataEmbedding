@@ -36,7 +36,9 @@ other. For example, you can add a matching cover page, header, and
 sidebar. Click Insert and then choose the elements you want from the
 different galleries.
 
+<kbd>
 <img src="ReadMe\media\image1.png" style="width:6.5in;height:2.25694in" />
+</kbd>
 
 Themes and styles also help keep your document coordinated. When you
 click Design and choose a new Theme, the pictures, charts, and SmartArt
