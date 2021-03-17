@@ -36,9 +36,7 @@ other. For example, you can add a matching cover page, header, and
 sidebar. Click Insert and then choose the elements you want from the
 different galleries.
 
-<kbd>
-<img src="ReadMe\media\image1.png" style="width:6.5in;height:2.25694in" />
-</kbd>
+<img src="ReadMe\media\image1.png" style="width:3.62705in;height:1.25939in" />
 
 Themes and styles also help keep your document coordinated. When you
 click Design and choose a new Theme, the pictures, charts, and SmartArt
@@ -72,18 +70,15 @@ of the document and focus on the text you want. If you need to stop
 reading before you reach the end, Word remembers where you left off -
 even on another device.
 
-<kbd>
-<img src="ReadMe\media\image2.png" style="width:4.1216in;height:2.22857in" />
-</kbd>
+<img src="ReadMe\media\image2.png" style="width:2.75381in;height:1.489in" />
 
 Here is some text
 
-<kbd>
-<img src="ReadMe\media\image3.png" style="width:3.92857in;height:1.73554in" />
-</kbd>
+<img src="ReadMe\media\image3.png" style="width:3.85632in;height:1.74714in" />
+
 Here is more text
 
-<img src="ReadMe\media\image4.png" style="width:5.20056in;height:1.48571in" />
+<img src="ReadMe\media\image4.png" style="width:4.43103in;height:1.29396in" />
 
 <img src="ReadMe\media\image5.png" style="width:5.10962in;height:1.94286in" />
 
