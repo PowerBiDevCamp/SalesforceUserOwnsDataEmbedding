@@ -1,0 +1,1 @@
+pandoc --extract-media ./Media Readme.docx -t gfm -o Readme.md
