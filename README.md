@@ -1,13 +1,18 @@
 # Salesforce User-Owns-Data Embedding App
 
-This sample project named **SalesforceUserOwnsDataApp** consists of a
-very simple Single Page Application (SPA) that implements User-Owns-Data
-embedding with Power BI reports. The solution is built using three
-essential files which include **index.html**, **app.css** and
-**app.js**. This solution contains an option fourth file named
-**loading.gif** which is used to demonstrate a white-label loading
-technique in which the developer can display a custom loading image
-instead of the standard Power BI branded loading image.
+This sample project named
+[**SalesforceUserOwnsDataApp**](https://github.com/PowerBiDevCamp/SalesforceUserOwnsDataEmbedding/tree/main/SalesforceUserOwnsDataApp)
+consists of a very simple Single Page Application (SPA) that implements
+User-Owns-Data embedding with Power BI reports. The solution is built
+using three essential files which include
+[**index.html**](https://github.com/PowerBiDevCamp/SalesforceUserOwnsDataEmbedding/blob/main/Dist/index.html),
+[**app.css**](https://github.com/PowerBiDevCamp/SalesforceUserOwnsDataEmbedding/blob/main/Dist/App/app.css)
+and
+[**app.js**](https://github.com/PowerBiDevCamp/SalesforceUserOwnsDataEmbedding/blob/main/Dist/App/app.js).
+This solution contains an option fourth file named **loading.gif** which
+is used to demonstrate a white-label loading technique in which the
+developer can display a custom loading image instead of the standard
+Power BI branded loading image.
 
 <img src="ReadMe\media\image1.png" style="width:1.37512in;height:1.24528in" />
 
