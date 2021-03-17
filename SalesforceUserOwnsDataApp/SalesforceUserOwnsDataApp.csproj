@@ -73,7 +73,6 @@
     <Content Include="index.html" />
     <Content Include="Scripts\jquery-3.5.0.js" />
     <Content Include="Scripts\msal-browser.js" />
-    <Content Include="Scripts\msal.js" />
     <Content Include="Scripts\powerbi.js" />
     <Content Include="Scripts\powerbi.min.js" />
   </ItemGroup>
