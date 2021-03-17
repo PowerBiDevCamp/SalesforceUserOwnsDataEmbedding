@@ -1,0 +1,31 @@
+﻿body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#signin{
+  margin: 24px;
+  width: 80%;
+  font-size: 2.0em;
+}
+
+#loading {
+  width: 100%;
+  background-color: #191F26;
+  text-align: center;
+}
+
+  #loading img { 
+    width: 80%;
+    max-width: 600px;
+  }
+
+#error-panel{
+  border: 1px solid black;
+  font-size: 1.5em;
+  padding: 12px;
+  color: darkred;
+  background-color: lightyellow;
+}
+
