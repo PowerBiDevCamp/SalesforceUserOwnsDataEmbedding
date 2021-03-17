@@ -1,10 +1,46 @@
 # Salesforce User-Owns-Data Embedding App
 
-This is a sample Single Page Application (SPA) that can be added into
-Salesforce using iFrames in VisualForce pages, Lighting Applications or
-Lighting Aura components.
+This sample project named **SalesforceUserOwnsDataApp** consists of a
+very simple Single Page Application (SPA) that implements User-Owns-Data
+embedding with Power BI reports. The solution is built using three
+essential files which include **index.html**, **app.css** and
+**app.js**. This solution contains an option fourth file named
+**loading.gif** which is used to demonstrate a white-label loading
+technique in which the developer can display a custom loading image
+instead of the standard Power BI branded loading image.
+
+<img src="ReadMe\media\image1.png" style="width:1.37512in;height:1.24528in" />
+
+Once this SPA application has been deployed and configured, you can
+integrated it into a Salesforce environment using iFrame tags. This
+techniques makes it possible to embed Power BI report in VisualForce
+pages, Lighting Applications and Lighting Aura components.
+
+A central motivation for this project is to provide a User-Owns-Data
+embedding experience in the Salesforce environment with more flexibility
+than the out-of-the-box Secure Embed feature. In particular, when
+embedding a Power BI report using an iFrame generated for the Secure
+Embed feature, the user must click the Sign-in button each time they
+begin a new browser session. This can make our end users a bit cranky.
+
+<img src="ReadMe\media\image2.png" style="width:1.72454in;height:1.18868in" />
+
+A embedding solution using **SalesforceUserOwnsDataApp** provides the
+following advantages over implementing User-Owns-Data embedding using
+the Secure Embed feature.
+
+-   When users log in the first time, their credentials are cached in
+    the browser using refresh tokens.
+
+-   Once user credentials are cached, embed reports will automatically
+    load without requiring interaction.
+
+-   This app uses a white-labelling technique to hide the Power BI logo
+    which is exchanged for an animated GIF with a custom loading image.
 
 ## Setting Up this Sample
+
+Setting up this application requires the following steps.
 
 -   Create an Azure AD application
 
@@ -36,7 +72,7 @@ other. For example, you can add a matching cover page, header, and
 sidebar. Click Insert and then choose the elements you want from the
 different galleries.
 
-<img src="ReadMe\media\image1.png" style="width:3.62705in;height:1.25939in" />
+<img src="ReadMe\media\image3.png" style="width:3.62705in;height:1.25939in" />
 
 Themes and styles also help keep your document coordinated. When you
 click Design and choose a new Theme, the pictures, charts, and SmartArt
@@ -70,22 +106,22 @@ of the document and focus on the text you want. If you need to stop
 reading before you reach the end, Word remembers where you left off -
 even on another device.
 
-<img src="ReadMe\media\image2.png" style="width:2.75381in;height:1.489in" />
+<img src="ReadMe\media\image4.png" style="width:2.75381in;height:1.489in" />
 
 Here is some text
 
-<img src="ReadMe\media\image3.png" style="width:1.86526in;height:0.84507in" />
+<img src="ReadMe\media\image5.png" style="width:1.86526in;height:0.84507in" />
 
 Here is more text
 
-<img src="ReadMe\media\image4.png" style="width:2.18779in;height:0.63889in" />
+<img src="ReadMe\media\image6.png" style="width:2.18779in;height:0.63889in" />
 
-<img src="ReadMe\media\image5.png" style="width:5.10962in;height:1.94286in" />
+<img src="ReadMe\media\image7.png" style="width:5.10962in;height:1.94286in" />
 
-<img src="ReadMe\media\image6.png" style="width:4.875in;height:2.21605in" />
+<img src="ReadMe\media\image8.png" style="width:4.875in;height:2.21605in" />
 
-<img src="ReadMe\media\image7.png" style="width:6.48542in;height:1.44316in" />
+<img src="ReadMe\media\image9.png" style="width:6.48542in;height:1.44316in" />
 
-<img src="ReadMe\media\image8.png" style="width:4.0676in;height:2.7in" />
+<img src="ReadMe\media\image10.png" style="width:4.0676in;height:2.7in" />
 
-<img src="ReadMe\media\image9.png" style="width:4.41189in;height:2.41429in" />
+<img src="ReadMe\media\image11.png" style="width:4.41189in;height:2.41429in" />
