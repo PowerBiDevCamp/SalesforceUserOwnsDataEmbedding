@@ -187,7 +187,7 @@ create an VisualForce page with the following code to embed a report.
     <iframe 
     width="1200" 
     height="720" 
-    src="https://salesforceuserownsdataapp.azurewebsites.net/index.html?reportId=becbea06-a792-47e3-9e5e-edd038c6f15e" 
+    src="https://salesforceuserownsdataapp.azurewebsites.net/index.html?reportId=YOUR_REPORT_ID" 
     frameborder="0" 
     allowFullScreen="true">
   </iframe>
