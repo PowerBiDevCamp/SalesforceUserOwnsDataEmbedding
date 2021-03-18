@@ -108,7 +108,7 @@ as **Salesforce User-OwnsData Embedding App** and accept the default
 selection for **Supported account types** to restrict users to a single
 tenant.
 
-<img src="ReadMe\media\image6.png" style="width:4.38321in;height:1.98585in" />
+<img src="ReadMe\media\image6.png" style="width:5.3723in;height:2.43396in" />
 
 In the **Redirect URL (optional)** section, select **Single Page
 Application (SPA)** from the dropdown list on the left and enter the
@@ -116,7 +116,7 @@ base URL where you will publish your application files followed by the
 HTML page name of **index.html** as shown in the following screenshot.
 Next, click the Register button to create the new Azure AD application.
 
-<img src="ReadMe\media\image7.png" style="width:3.83019in;height:1.09267in" />
+<img src="ReadMe\media\image7.png" style="width:5.14231in;height:1.46698in" />
 
 Once you have created the new Azure AD application, the Azure portal
 should display the application's overview page which display GUID for
