@@ -41,10 +41,11 @@ button each time they begin a new browser session.
 
 <img src="ReadMe\media\image3.png" style="width:1.1934in;height:0.82258in" />
 
-This need for user interaction to load a Power BI report has the
-potential to make our end users a bit cranky. A embedding solution using
-**SalesforceUserOwnsDataApp** provides the following advantages over
-implementing User-Owns-Data embedding using the Secure Embed feature.
+This continual requirement for user interaction to load a Power BI
+report has the potential to make our end users a bit cranky. A embedding
+solution using **SalesforceUserOwnsDataApp** provides the following
+advantages over implementing User-Owns-Data embedding using the Secure
+Embed feature.
 
 -   When users log in the first time, their credentials are cached in
     the browser using refresh tokens.
@@ -55,16 +56,21 @@ implementing User-Owns-Data embedding using the Secure Embed feature.
 -   This app uses a white-labelling technique to hide the Power BI logo
     which is exchanged for an animated GIF with a custom loading image.
 
-## Setting Up this Sample
+## Setting Up the **SalesforceUserOwnsDataApp** Sample
 
-Setting up this application requires the following steps.
+To configure the **SalesforceUserOwnsDataApp** sample, you must follow
+these steps.
 
--   Create an Azure AD application
+-   Find a place to publish the application files where they're
+    accessible through HTTPS.
 
--   Download the application files and configure app.js to use your
-    application ID
+-   Create an Azure AD application for a Single Page Application
 
--   Upload the application files to any location where they can be
+-   Download the [application
+    files](https://github.com/PowerBiDevCamp/SalesforceUserOwnsDataEmbedding/archive/main.zip)
+    and configure **app.js** to use your application ID and tenant.
+
+-   Upload the application files to the publish location where they're
     accessible through an HTTPS URL.
 
 -   Update the Azure AD application with the URL for the domain where
@@ -73,72 +79,64 @@ Setting up this application requires the following steps.
 -   Test embedding a Power BI report by going directly to the
     application's URL.
 
--   Embed the report in Salesforce by adding iFrames to VisualForce
-    pages and
+-   Embed the report in Salesforce by adding iFrames to a VisualForce
+    page.
 
-## Heading 1
+## Find a location to publish the application files
 
-Video provides a powerful way to help you prove your point. When you
-click Online Video, you can paste in the embed code for the video you
-want to add. You can also type a keyword to search online for the video
-that best fits your document.
+There are many different places you can publish the application files
+where they are accessible through a URL that uses the HTTPS protocol.
+For example, let's say you create a new Azure App Service which has a
+base URL of <https://salesforceuserownsdataapp.azurewebsites.net>. Once
+you upload the application files to this location, the index.html file
+should then be accessible through the following URL.
 
-To make your document look professionally produced, Word provides
-header, footer, cover page, and text box designs that complement each
-other. For example, you can add a matching cover page, header, and
-sidebar. Click Insert and then choose the elements you want from the
-different galleries.
+<img src="ReadMe\media\image4.png" style="width:4.57075in;height:1.29759in" alt="Graphical user interface, text, application Description automatically generated" />
 
-<img src="ReadMe\media\image4.png" style="width:3.62705in;height:1.25939in" />
+## Creating the Azure AD application
 
-Themes and styles also help keep your document coordinated. When you
-click Design and choose a new Theme, the pictures, charts, and SmartArt
-graphics change to match your new theme. When you apply styles, your
-headings change to match the new theme.
+The setup process includes creating a new Azure AD application in the
+same tenant which contains the Power BI reports you'd like to embed.
+Begin by navigating to the [App
+registration](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)
+page in the Azure portal and click the **New registration** link.
 
-Save time in Word with new buttons that show up where you need them. To
-change the way a picture fits in your document, click it and a button
-for layout options appears next to it. When you work on a table, click
-where you want to add a row or a column, and then click the plus sign.
+<img src="ReadMe\media\image5.png" style="width:3.98585in;height:1.34883in" />
 
-Reading is easier, too, in the new Reading view. You can collapse parts
-of the document and focus on the text you want. If you need to stop
-reading before you reach the end, Word remembers where you left off -
-even on another device.
+On the **Register an application** page, enter an application name such
+as **Salesforce User-OwnsData Embedding App** and accept the default
+selection for **Supported account types** to restrict users to a single
+tenant.
 
-## Heading 2
+<img src="ReadMe\media\image6.png" style="width:3.45659in;height:1.56604in" />
 
-Themes and styles also help keep your document coordinated. When you
-click Design and choose a new Theme, the pictures, charts, and SmartArt
-graphics change to match your new theme. When you apply styles, your
-headings change to match the new theme.
+In the **Redirect URL (optional)** section, select **Single Page
+Application (SPA)** from the dropdown list on the left and enter the
+base URL where you will publish your application files followed by the
+HTML page name of **index.html** as shown in the following screenshot.
+Next, click the Register button to create the new Azure AD application.
 
-Save time in Word with new buttons that show up where you need them. To
-change the way a picture fits in your document, click it and a button
-for layout options appears next to it. When you work on a table, click
-where you want to add a row or a column, and then click the plus sign.
+<img src="ReadMe\media\image7.png" style="width:3.83019in;height:1.09267in" />
 
-Reading is easier, too, in the new Reading view. You can collapse parts
-of the document and focus on the text you want. If you need to stop
-reading before you reach the end, Word remembers where you left off -
-even on another device.
+Once you have created the new Azure AD application, the Azure portal
+should display the application's overview page which display GUID for
+the **Application ID**. You will need to copy the Application ID and
+paste it into **app.js**.
 
-<img src="ReadMe\media\image5.png" style="width:2.75381in;height:1.489in" />
+<img src="ReadMe\media\image8.png" style="width:4.85377in;height:1.98093in" />
 
-Here is some text
+Test
 
-<img src="ReadMe\media\image6.png" style="width:1.86526in;height:0.84507in" />
+<img src="ReadMe\media\image9.png" style="width:3.51448in;height:1.66981in" />
 
-Here is more text
-
-<img src="ReadMe\media\image7.png" style="width:2.18779in;height:0.63889in" />
-
-<img src="ReadMe\media\image8.png" style="width:5.10962in;height:1.94286in" />
-
-<img src="ReadMe\media\image9.png" style="width:4.875in;height:2.21605in" />
+Test
 
 <img src="ReadMe\media\image10.png" style="width:6.48542in;height:1.44316in" />
 
+Test
+
 <img src="ReadMe\media\image11.png" style="width:4.0676in;height:2.7in" />
+
+Test
 
 <img src="ReadMe\media\image12.png" style="width:4.41189in;height:2.41429in" />
