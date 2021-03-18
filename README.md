@@ -33,16 +33,18 @@ pages, Lighting Applications and Lighting Aura components.
 
 A central motivation for this project is to provide a User-Owns-Data
 embedding experience in the Salesforce environment with more flexibility
-than the out-of-the-box Secure Embed feature. In particular, when
-embedding a Power BI report using an iFrame generated for the Secure
-Embed feature, the user must click the Sign-in button each time they
-begin a new browser session. This can make our end users a bit cranky.
+than the out-of-the-box [Secure Embed
+feature](https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-embed-secure).
+In particular, when embedding a Power BI report using an iFrame
+generated for the Secure Embed feature, the user must click the Sign-in
+button each time they begin a new browser session.
 
 <img src="ReadMe\media\image3.png" style="width:1.1934in;height:0.82258in" />
 
-A embedding solution using **SalesforceUserOwnsDataApp** provides the
-following advantages over implementing User-Owns-Data embedding using
-the Secure Embed feature.
+This need for user interaction to load a Power BI report has the
+potential to make our end users a bit cranky. A embedding solution using
+**SalesforceUserOwnsDataApp** provides the following advantages over
+implementing User-Owns-Data embedding using the Secure Embed feature.
 
 -   When users log in the first time, their credentials are cached in
     the browser using refresh tokens.
