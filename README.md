@@ -87,9 +87,9 @@ these steps.
 There are many different places you can publish the application files
 where they are accessible through a URL that uses the HTTPS protocol.
 For example, let's say you create a new Azure App Service which has a
-base URL of <https://salesforceuserownsdataapp.azurewebsites.net>. Once
-you upload the application files to this location, the **index.html**
-file should then be accessible through the following URL.
+base URL of **https://salesforceuserownsdataapp.azurewebsites.net**.
+Once you upload the application files to this location, the
+**index.html** file should then be accessible through the following URL.
 
 <img src="ReadMe\media\image4.png" style="width:4.57075in;height:1.29759in" alt="Graphical user interface, text, application Description automatically generated" />
 
@@ -116,27 +116,89 @@ base URL where you will publish your application files followed by the
 HTML page name of **index.html** as shown in the following screenshot.
 Next, click the Register button to create the new Azure AD application.
 
-<img src="ReadMe\media\image7.png" style="width:5.14231in;height:1.46698in" />
+<img src="ReadMe\media\image7.png" style="width:6.7131in;height:1.91509in" />
 
-Once you have created the new Azure AD application, the Azure portal
-should display the application's overview page which display GUID for
-the **Application ID**. You will need to copy the Application ID and
-paste it into **app.js**.
+When you create the new Azure AD application, the Azure portal should
+navigate to the application overview page which displays the
+**Application ID**. You will need to copy this Application ID and paste
+it into **app.js**. At this point, copy the Application ID and paste it
+into a new Notepad document so you can paste it into **app.js** later.
 
 <img src="ReadMe\media\image8.png" style="width:4.85377in;height:1.98093in" />
 
-Test
+An Azure AD application can optionally be configured with multiple
+**Redirect URIs**. In some scenarios you might want to add additional
+**Redirect URIs** which can be accomplished by click the
+**Authentication** link in the left navigation and then clicking **Add
+URI**. For example, you can add a second Redirect URI of
+**https://localhost:44300** so that you can run and test the
+**SalesforceUserOwnsDataApp** sample project in Visual Studio 2019.
 
-<img src="ReadMe\media\image9.png" style="width:3.51448in;height:1.66981in" />
+<img src="ReadMe\media\image9.png" style="width:4.17965in;height:1.98585in" />
 
-Test
+Now that you have created the Azure AD application, it's time to modify
+**app.js** with the Application ID and the Tenant Name. If you open
+app.js, you will see two variables named **clientId** and **tenant**.
+Update the **clientId** variable with the Application ID of the new
+Azure AD application. Update the **tenant** variable with the name of
+your Azure AD tenant.
 
-<img src="ReadMe\media\image10.png" style="width:6.48542in;height:1.44316in" />
+<img src="ReadMe\media\image10.png" style="width:4.56132in;height:1.97657in" />
 
-Test
+Once you have made these changes to **app.js**, upload all four
+application files to the publishing location. At this point, you should
+be able to access the index.html file through the HTTPS protocol.
 
-<img src="ReadMe\media\image11.png" style="width:4.0676in;height:2.7in" />
+<img src="ReadMe\media\image11.png" style="width:4.19811in;height:1.09815in" />
 
-Test
+Now you are ready to test the application. But first you to find the
+report ID of the report you want to embed. In a separate browser tab,
+open a Power BI report and copy the Report ID from the URL in the
+browser address bar.
 
-<img src="ReadMe\media\image12.png" style="width:4.41189in;height:2.41429in" />
+<img src="ReadMe\media\image12.png" style="width:5.22642in;height:1.626in" />
+
+Now return to the application page and add a query string parameter
+named **reportId** with the value set to the report Id.
+
+<img src="ReadMe\media\image13.png" style="width:5in;height:0.57222in" />
+
+When you refresh the page with the **reportId** parameter, the
+application should begin the login sequence. After logging in the first
+time, each user should be prompted with a standard Azure AD dialog which
+prompts the user to accept the permissions requested by the application.
+Click the **Accept** button to continue.
+
+<img src="ReadMe\media\image14.png" style="width:3.03577in;height:2.01509in" />
+
+At this point, the report should be display in the browser.
+
+<img src="ReadMe\media\image15.png" style="width:4.41189in;height:2.41429in" />
+
+Once you have things set up this far, it is time to embed things in a
+Salesforce page. For example, you can create an VisualForce page with
+the following code to embed a report.
+
+**&lt;apex:page showHeader="true" standardStylesheets="false" &gt;**
+
+**&lt;h1&gt;Custom Embed 2&lt;/h1&gt;**
+
+**&lt;iframe**
+
+**width="1200"**
+
+**height="720"**
+
+**src="https://salesforceuserownsdataapp.azurewebsites.net/index.html?reportId=becbea06-a792-47e3-9e5e-edd038c6f15e"**
+
+**frameborder="0"**
+
+**allowFullScreen="true"&gt;**
+
+**&lt;/iframe&gt;**
+
+**&lt;/apex:page&gt;**
+
+This should result in a Salesforce page that embed a Power BI report.
+
+<img src="ReadMe\media\image16.png" style="width:6.23926in;height:3.07076in" />
