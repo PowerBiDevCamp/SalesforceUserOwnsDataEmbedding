@@ -20,9 +20,9 @@ The **SalesforceUserOwnsDataApp** project uses three different
 JavaScript libraries which include [jQuery](https://jquery.com/),
 [Microsoft Authentication Library for JavaScript
 v2](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)
-(msal-browser.js) and the [Power BI JavaScript
+(**msal-browser.js**) and the [Power BI JavaScript
 library](https://docs.microsoft.com/en-us/javascript/api/overview/powerbi/)
-(powerbi.js).
+(**powerbi.js**).
 
 <img src="ReadMe\media\image2.png" style="width:1.87736in;height:0.93868in" />
 
