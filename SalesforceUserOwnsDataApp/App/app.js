@@ -1,6 +1,6 @@
 ﻿
 let clientId = "11111111-1111-1111-1111-111111111111";
-let tenant = "MY_TENANT.onMicrosoft.com";
+let tenant = "YOUR_TENANT.onMiicrosoft.com";
 let authority = "https://login.microsoftonline.com/" + tenant;
 
 const msalConfig = {
@@ -19,8 +19,10 @@ const msalConfig = {
 };
 
 const loginScopes = {
-  scopes: [ 
-    "openid", 
+  scopes: [
+    "openid",
+    "profile",
+    "email",
     "https://analysis.windows.net/powerbi/api/Report.Read.All",
   ]
 };
@@ -35,6 +37,7 @@ $(async function () {
 
   const params = new URLSearchParams(window.location.search)
   let reportId = params.get("reportId");
+  "filter"
 
   if (!reportId) {
     DisplayError("The report is not configured with a valid report ID.");
@@ -76,6 +79,7 @@ let EmbedReport = function (token, reportId) {
 
   $("#toolbar").hide();
   $("#error-panel").hide();
+
 
   let padding = 8;
   $("#report-container")
@@ -123,4 +127,9 @@ let DisplayError = function (msg) {
   $("#error-panel")
     .text("Error: " + msg)
     .show();
+
 }
+
+
+
+
