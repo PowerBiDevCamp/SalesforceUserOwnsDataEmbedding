@@ -88,12 +88,12 @@ There are many different places you can publish the application files
 where they are accessible through a URL that uses the HTTPS protocol.
 For example, let's say you create a new Azure App Service which has a
 base URL of <https://salesforceuserownsdataapp.azurewebsites.net>. Once
-you upload the application files to this location, the index.html file
-should then be accessible through the following URL.
+you upload the application files to this location, the **index.html**
+file should then be accessible through the following URL.
 
 <img src="ReadMe\media\image4.png" style="width:4.57075in;height:1.29759in" alt="Graphical user interface, text, application Description automatically generated" />
 
-## Creating the Azure AD application
+## Creating an Azure AD application for an SPA
 
 The setup process includes creating a new Azure AD application in the
 same tenant which contains the Power BI reports you'd like to embed.
@@ -108,7 +108,7 @@ as **Salesforce User-OwnsData Embedding App** and accept the default
 selection for **Supported account types** to restrict users to a single
 tenant.
 
-<img src="ReadMe\media\image6.png" style="width:3.45659in;height:1.56604in" />
+<img src="ReadMe\media\image6.png" style="width:4.38321in;height:1.98585in" />
 
 In the **Redirect URL (optional)** section, select **Single Page
 Application (SPA)** from the dropdown list on the left and enter the
