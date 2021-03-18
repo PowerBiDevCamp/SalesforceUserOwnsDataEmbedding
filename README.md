@@ -17,9 +17,14 @@ Power BI branded loading image.
 <img src="ReadMe\media\image1.png" style="width:1.37512in;height:1.24528in" />
 
 The **SalesforceUserOwnsDataApp** project uses three different
-JavaScript libraries which include jQuery,
+JavaScript libraries which include [jQuery](https://jquery.com/),
+[Microsoft Authentication Library for JavaScript
+v2](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)
+(msal-browser.js) and the [Power BI JavaScript
+library](https://docs.microsoft.com/en-us/javascript/api/overview/powerbi/)
+(powerbi.js).
 
-<img src="ReadMe\media\image2.png" style="width:1.38679in;height:0.6934in" />
+<img src="ReadMe\media\image2.png" style="width:1.87736in;height:0.93868in" />
 
 Once this SPA application has been deployed and configured, you can
 integrated it into a Salesforce environment using iFrame tags. This
