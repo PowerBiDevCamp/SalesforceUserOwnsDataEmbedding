@@ -159,7 +159,8 @@ browser address bar.
 <img src="ReadMe\media\image12.png" style="width:5.22642in;height:1.626in" />
 
 Now return to the application page and add a query string parameter
-named **reportId** with the value set to the report Id.
+named **reportId** with the value set to the report Id. After
+configuring the reportId query string parameter, resubmit the page.
 
 <img src="ReadMe\media\image13.png" style="width:5in;height:0.57222in" />
 
