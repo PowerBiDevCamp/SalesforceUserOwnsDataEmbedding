@@ -181,16 +181,19 @@ it in Salesforce.
 Now it's time to embed things in a Salesforce page. For example, you can
 create an VisualForce page with the following code to embed a report.
 
-```Apex
+```html
 <apex:page showHeader="true" standardStylesheets="false"  >
+
   <h1>Custom Embed 2</h1>
-    <iframe 
+  
+  <iframe 
     width="1200" 
     height="720" 
     src="https://salesforceuserownsdataapp.azurewebsites.net/index.html?reportId=YOUR_REPORT_ID" 
     frameborder="0" 
     allowFullScreen="true">
   </iframe>
+
 </apex:page>
 ````
 This should result in a Salesforce page that embed a Power BI report.
