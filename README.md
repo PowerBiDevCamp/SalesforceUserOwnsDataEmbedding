@@ -172,13 +172,14 @@ Click the **Accept** button to continue.
 
 <img src="ReadMe\media\image14.png" style="width:3.03577in;height:2.01509in" />
 
-At this point, the report should be display in the browser.
+At this point, the report should be displayed in the browser. The
+application has now been set up and configured and you can begin using
+it in Salesforce.
 
 <img src="ReadMe\media\image15.png" style="width:4.41189in;height:2.41429in" />
 
-Once you have things set up this far, it is time to embed things in a
-Salesforce page. For example, you can create an VisualForce page with
-the following code to embed a report.
+Now it's time to embed things in a Salesforce page. For example, you can
+create an VisualForce page with the following code to embed a report.
 
 **&lt;apex:page showHeader="true" standardStylesheets="false" &gt;**
 
