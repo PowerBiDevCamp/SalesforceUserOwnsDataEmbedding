@@ -38,7 +38,7 @@ embedding a Power BI report using an iFrame generated for the Secure
 Embed feature, the user must click the Sign-in button each time they
 begin a new browser session. This can make our end users a bit cranky.
 
-<img src="ReadMe\media\image3.png" style="width:1.72454in;height:1.18868in" />
+<img src="ReadMe\media\image3.png" style="width:1.1934in;height:0.82258in" />
 
 A embedding solution using **SalesforceUserOwnsDataApp** provides the
 following advantages over implementing User-Owns-Data embedding using
